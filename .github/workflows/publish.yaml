@@ -37,3 +37,10 @@ jobs:
           zip: ../data.zip
           changelog: ${{ github.event.head_commit.message }}
 
+      - name: Update Codio Course
+        uses: codio/codio-course-book-update-action@master
+        with:
+          token: ${{ steps.codio-login.outputs.token }}
+          course-id: 5d2627e6b643887c072eea40
+          book-id: 5777e7e3b2ce90d2325e923d981a0a06
+          domain: test1-codio.com
