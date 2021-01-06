@@ -1,0 +1,17 @@
+{
+ "name": "Test API publish",
+ "children": [
+  {
+   "title": "Page 1",
+   "id": "c3205a89-1a02-3419-dd10-5e1ac8d895f9",
+   "pageId": "c3205a89-1a02-3419-dd10-5e1ac8d895f9",
+   "type": "page"
+  },
+  {
+   "title": "Page 2",
+   "id": "d6fcd98f-119e-c839-d72f-b4779da0949d",
+   "pageId": "d6fcd98f-119e-c839-d72f-b4779da0949d",
+   "type": "page"
+  }
+ ]
+}
