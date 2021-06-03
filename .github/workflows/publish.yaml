@@ -24,4 +24,5 @@ jobs:
           course-id: 5d2627e6b643887c072eea40
           changelog: ${{ github.event.head_commit.message }}
           yml: ./.github/yaml_map
+          domain: test1-codio.com
 
