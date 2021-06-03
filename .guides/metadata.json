@@ -10,6 +10,7 @@
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
+   "closeTerminalSession": true,
    "learningObjectives": ""
   },
   {
@@ -22,12 +23,20 @@
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
+   "closeTerminalSession": true,
    "learningObjectives": ""
   }
  ],
  "theme": "light",
  "scripts": [],
  "lexikonTopic": "",
+ "suppressPageNumbering": false,
  "useSubmitButtons": true,
- "useMarkAsComplete": true
+ "useMarkAsComplete": true,
+ "hideMenu": false,
+ "allowGuideClose": false,
+ "collapsedOnStart": false,
+ "hideSectionsToggle": false,
+ "hideBackToDashboard": false,
+ "protectLayout": false
 }

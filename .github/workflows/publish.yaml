@@ -13,47 +13,22 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Cleanup
-        run: rm -rf .github README.md .git
-
-      - name: Archive
-        run: tar czf ../assignment.tar.gz . && mv ../assignment.tar.gz assignment.tar.gz
-
-      - name: Upload artifactory
-        uses: actions/upload-artifact@master
-        with:
-          name: assignment
-          path: assignment.tar.gz
-          retention-days: 2
-
-  publish:
-    needs: build
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/download-artifact@master
-        with:
-          name: assignment
-
+        run: rm -rf README.md .git
+      
       - name: Log into Codio
         id: codio-login
         uses: codio/codio-auth-action@master
         with:
-          client-id: ${{ secrets.CODIO_TEST1_CLIENT_ID }}
-          secret-id: ${{ secrets.CODIO_TEST1_SECRET_ID }}
-          domain: test1-codio.com
+          client-id: ${{ secrets.CODIO_PRODUCTION_CLIENT_ID }}
+          secret-id: ${{ secrets.CODIO_PRODUCTION_SECRET_ID }}
+          domain: codio.com
 
       - name: Publish to Codio
-        uses: codio/codio-book-publish-action@master
+        uses: codio/codio-assignment-publish-action@master
         with:
           token: ${{ steps.codio-login.outputs.token }}
-          book-id: 5777e7e3b2ce90d2325e923d981a0a06
-          domain: test1-codio.com
-          zip: assignment.tar.gz
+          dir: ./
+          course-id: 5c775385cb4af986c95c549aa505304c
           changelog: ${{ github.event.head_commit.message }}
+          yml: ./.github/yaml_map
 
-      - name: Update Codio Course
-        uses: codio/codio-course-book-update-action@master
-        with:
-          token: ${{ steps.codio-login.outputs.token }}
-          course-id: 5d2627e6b643887c072eea40
-          book-id: 5777e7e3b2ce90d2325e923d981a0a06
-          domain: test1-codio.com

@@ -2,16 +2,36 @@
  "name": "Test API publish",
  "children": [
   {
-   "title": "Page 1",
-   "id": "c3205a89-1a02-3419-dd10-5e1ac8d895f9",
-   "pageId": "c3205a89-1a02-3419-dd10-5e1ac8d895f9",
-   "type": "page"
+   "title": "Section1",
+   "id": "591d057a-041e-328c-9cc9-a2b991de9d29",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Page 1",
+     "id": "c3205a89-1a02-3419-dd10-5e1ac8d895f9",
+     "type": "page",
+     "pageId": "c3205a89-1a02-3419-dd10-5e1ac8d895f9"
+    }
+   ]
   },
   {
-   "title": "Page 2",
-   "id": "d6fcd98f-119e-c839-d72f-b4779da0949d",
-   "pageId": "d6fcd98f-119e-c839-d72f-b4779da0949d",
-   "type": "page"
+   "title": "Section 2",
+   "id": "a4a5ca6b-6cd9-4d65-ef5d-d44bd194ee07",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Page 2",
+     "id": "d6fcd98f-119e-c839-d72f-b4779da0949d",
+     "type": "page",
+     "pageId": "d6fcd98f-119e-c839-d72f-b4779da0949d"
+    }
+   ]
+  },
+  {
+   "title": "Section3",
+   "id": "e86a5e5c-1810-4b16-3ffb-200975923413",
+   "type": "chapter",
+   "children": []
   }
  ]
 }
