@@ -14,19 +14,12 @@ jobs:
 
       - name: Cleanup
         run: rm -rf README.md .git
-      
-      - name: Log into Codio
-        id: codio-login
-        uses: codio/codio-auth-action@master
-        with:
-          client-id: ${{ secrets.CODIO_PRODUCTION_CLIENT_ID }}
-          secret-id: ${{ secrets.CODIO_PRODUCTION_SECRET_ID }}
-          domain: codio.com
 
       - name: Publish to Codio
         uses: codio/codio-assignment-publish-action@master
         with:
-          token: ${{ steps.codio-login.outputs.token }}
+          client-id: ${{ secrets.CODIO_PRODUCTION_CLIENT_ID }}
+          secret-id: ${{ secrets.CODIO_PRODUCTION_SECRET_ID }}
           dir: ./
           course-id: 5c775385cb4af986c95c549aa505304c
           changelog: ${{ github.event.head_commit.message }}

@@ -2,15 +2,28 @@
  "name": "Test API publish",
  "children": [
   {
-   "title": "Section1",
+   "title": "Chapter 1",
    "id": "591d057a-041e-328c-9cc9-a2b991de9d29",
    "type": "chapter",
    "children": [
     {
-     "title": "Page 1",
-     "id": "c3205a89-1a02-3419-dd10-5e1ac8d895f9",
-     "type": "page",
-     "pageId": "c3205a89-1a02-3419-dd10-5e1ac8d895f9"
+     "title": "Section 1.1",
+     "id": "93f482db-94ac-8018-1a44-4c8fa2e2e488",
+     "type": "section",
+     "children": [
+      {
+       "title": "Page 1",
+       "id": "c3205a89-1a02-3419-dd10-5e1ac8d895f9",
+       "type": "page",
+       "pageId": "c3205a89-1a02-3419-dd10-5e1ac8d895f9"
+      },
+      {
+       "title": "Page 1",
+       "id": "69aa69d0-91b8-82ba-ffa7-b94997fa5553",
+       "type": "page",
+       "pageId": "77912c84-4e8a-82bc-2d94-62cf7f4e19f3"
+      }
+     ]
     }
    ]
   },
