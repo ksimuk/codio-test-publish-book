@@ -16,7 +16,7 @@ jobs:
         run: rm -rf README.md .git
 
       - name: Publish to Codio
-        uses: codio/codio-assignment-publish-action@updated-version-books
+        uses: codio/codio-assignment-publish-action
         with:
           client-id: ${{ secrets.CODIO_CLIENT_ID }}
           secret-id: ${{ secrets.CODIO_SECRET_ID }}
