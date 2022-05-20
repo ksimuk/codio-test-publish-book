@@ -50,7 +50,14 @@
    "title": "Section3",
    "id": "e86a5e5c-1810-4b16-3ffb-200975923413",
    "type": "chapter",
-   "children": []
+   "children": [
+    {
+     "id": "f59274f9-d207-4bc0-cb34-503e743e1c45",
+     "title": "Page 5",
+     "pageId": "98352908-33d3-edee-59b4-29d2ff7cedb8",
+     "type": "page"
+    }
+   ]
   }
  ]
 }
