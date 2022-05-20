@@ -21,6 +21,6 @@ jobs:
           client-id: ${{ secrets.CODIO_CLIENT_ID }}
           secret-id: ${{ secrets.CODIO_SECRET_ID }}
           dir: ./
-          course-id: eedbe86699c29069a9893224984ec06d 
+          course-name: "automate master" 
           changelog: ${{ github.event.head_commit.message }}
           yml: ./.github/yaml_map
