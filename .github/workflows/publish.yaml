@@ -16,7 +16,7 @@ jobs:
         run: rm -rf README.md .git
 
       - name: Publish to Codio
-        uses: codio/codio-assignment-publish-action
+        uses: codio/codio-assignment-publish-action@master
         with:
           client-id: ${{ secrets.CODIO_CLIENT_ID }}
           secret-id: ${{ secrets.CODIO_SECRET_ID }}
@@ -24,4 +24,3 @@ jobs:
           course-id: eedbe86699c29069a9893224984ec06d 
           changelog: ${{ github.event.head_commit.message }}
           yml: ./.github/yaml_map
-
